@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Attendance Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gemini-icon" style="top: 10%; left: 10%;"></div>
+  <div class="gemini-icon" style="top: 20%; right: 15%;"></div>
+  <div class="gemini-icon" style="bottom: 15%; left: 20%;"></div>
+  <div class="gemini-icon" style="bottom: 10%; right: 10%;"></div>
+
+  <div class="container">
+    <h1 class="header">Employee Attendance Tracker</h1>
+
+    <!-- Add Employee Section -->
+    <div class="add-employee">
+      <h2>Add Employee</h2>
+      <div class="input-group">
+        <input id="employeeName" type="text" placeholder="Enter employee name">
+        <button id="addEmployeeBtn">Add</button>
+      </div>
+    </div>
+
+    <!-- Attendance Table -->
+    <div class="attendance-section">
+      <h2>Attendance</h2>
+      <table id="attendanceTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Present</th>
+            <th>Absent</th>
+            <th>Attendance %</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="employeeTable">
+          <!-- Rows will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
